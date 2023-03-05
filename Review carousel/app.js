@@ -70,10 +70,7 @@ previous.addEventListener("click", function () {
   }
   showPerson(currentItem);
 });
-//random review
-// randomBtn.addEventListener("click", function () {
-//   Math.floor(Math.random() * review.length);
-// });
+ //random review (CHALLENGE)
 randomBtn.addEventListener("click", function () {
   currentItem = Math.floor(Math.random() * review.length);
   if (currentItem < 0) {
@@ -81,3 +78,5 @@ randomBtn.addEventListener("click", function () {
   }
   showPerson(currentItem);
 });
+
+//WELDONE NIKI!!!
