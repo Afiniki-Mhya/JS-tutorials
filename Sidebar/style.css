@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: #002b5b;
+    color: #ffff;
+    padding: 2rem;
+  }
+  .nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-logo {
+    letter-spacing: 1rem;
+    font-size: 20px;
+  }
+  .span {
+    color: #8fe3cf;
+  }
+  
+  .fa-solid {
+    display: none;
+    font-size: 2rem;
+  }
+  .fa{
+    display: none;
+    font-size: 2rem;
+  }
+  
+  
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    font-size: 22px;
+    gap: 3rem;
+    list-style: none;
+  }
+  .nav-links li a {
+    text-decoration: none;
+    color: #8fe3cf;
+    cursor: pointer;
+  }
+  
+  .nav-links :hover {
+    color: #256d85;
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 950px) {
+    .fa-solid {
+      display: block;
+    }
+    .fa-solid:hover{
+      rotate: 90deg;
+    }
+  .fa{
+    display: block;
+  }
+    .nav-links {
+      position: fixed;
+      margin: 2rem auto;
+      width: 50%;
+      height: 100vh;
+      background-color: #0000008b;
+      top: 80px;
+      right: -100%;
+      text-align: center;
+      align-items: center;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+      transition: all .5s;
+    }
+    .nav-links li a {
+      font-size: 30px;
+      font-weight: bold;
+    }
+    .nav-links li a:hover{
+      color: #256d85;
+    }
+    .fa-solid,.nav-links li a.active {
+      right: 0;
+    }
+    .show{
+      right: 0;
+    }
+  } 
+   
+  
